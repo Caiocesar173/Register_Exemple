@@ -1,0 +1,17 @@
+﻿#############################################################################
+#                             Script de Criação                             #
+#                                Banco de Dados                             #
+#############################################################################
+
+
+#--------------------------------X----------------------#
+#Usuarios:
+	CREATE TABLE USUARIO(
+		ID_USUARIO int not null auto_increment,
+		NOME varchar(70) not null,
+		ENDEREÇO varchar(60) not null, 
+		CPF varchar(14) not null,
+		
+		UNIQUE key(CPF),
+		primary key(ID_USUARIO)
+	);
