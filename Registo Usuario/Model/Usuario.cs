@@ -16,7 +16,6 @@ namespace Registo_Usuario.Model
 
         public bool ValidaCPF(string cpf)
         {
-            Console.WriteLine("Antes do Trim" + cpf);
             string tempCpf;
             string digito;
             int soma;
@@ -37,7 +36,6 @@ namespace Registo_Usuario.Model
                     cpf = cpf.Replace("-", "");
                 }
             }
-            Console.WriteLine("Depois do Trim" + cpf);
 
             if (cpf.Length != 11)
                 return false;
@@ -62,8 +60,6 @@ namespace Registo_Usuario.Model
             else
                 resto = 11 - resto;
             digito = digito + resto.ToString();
-
-            Console.WriteLine("Dentro da Validação do CPF: " +  cpf.EndsWith(digito));
 
             return cpf.EndsWith(digito);
         }

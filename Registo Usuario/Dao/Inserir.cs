@@ -26,7 +26,7 @@ namespace Registo_Usuario.Dao
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
 
-                // check if the user exists or not
+                //Verifica se o Usuario Ja esta cadastrado.
                 if (table.Rows.Count == 0)
                 {
                     if (!Conexão.Checkconection())
@@ -56,6 +56,7 @@ namespace Registo_Usuario.Dao
                 }
                 else
                 {
+                    
                     MessageBox.Show("Usuario já Existe","Problemas ao inserir");
                 }
             }

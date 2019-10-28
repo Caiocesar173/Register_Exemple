@@ -43,7 +43,6 @@
             this.Register_Drag = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Form_Elipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Label_Error = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.TestaConexao_btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Label_UsuarioCadastrado = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.SuspendLayout();
             // 
@@ -300,42 +299,6 @@
             this.Label_Error.Text = "Todos os Campos devem ser Preenchidos";
             this.Label_Error.Visible = false;
             // 
-            // TestaConexao_btn
-            // 
-            this.TestaConexao_btn.Active = false;
-            this.TestaConexao_btn.Activecolor = System.Drawing.Color.Gray;
-            this.TestaConexao_btn.BackColor = System.Drawing.Color.Silver;
-            this.TestaConexao_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TestaConexao_btn.BorderRadius = 0;
-            this.TestaConexao_btn.ButtonText = "Conexão";
-            this.TestaConexao_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TestaConexao_btn.DisabledColor = System.Drawing.Color.Gray;
-            this.TestaConexao_btn.Iconcolor = System.Drawing.Color.Transparent;
-            this.TestaConexao_btn.Iconimage = null;
-            this.TestaConexao_btn.Iconimage_right = null;
-            this.TestaConexao_btn.Iconimage_right_Selected = null;
-            this.TestaConexao_btn.Iconimage_Selected = null;
-            this.TestaConexao_btn.IconMarginLeft = 0;
-            this.TestaConexao_btn.IconMarginRight = 0;
-            this.TestaConexao_btn.IconRightVisible = true;
-            this.TestaConexao_btn.IconRightZoom = 0D;
-            this.TestaConexao_btn.IconVisible = true;
-            this.TestaConexao_btn.IconZoom = 90D;
-            this.TestaConexao_btn.IsTab = false;
-            this.TestaConexao_btn.Location = new System.Drawing.Point(161, 426);
-            this.TestaConexao_btn.Name = "TestaConexao_btn";
-            this.TestaConexao_btn.Normalcolor = System.Drawing.Color.Silver;
-            this.TestaConexao_btn.OnHovercolor = System.Drawing.Color.DimGray;
-            this.TestaConexao_btn.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.TestaConexao_btn.selected = false;
-            this.TestaConexao_btn.Size = new System.Drawing.Size(117, 35);
-            this.TestaConexao_btn.TabIndex = 1002;
-            this.TestaConexao_btn.Text = "Conexão";
-            this.TestaConexao_btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TestaConexao_btn.Textcolor = System.Drawing.Color.White;
-            this.TestaConexao_btn.TextFont = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TestaConexao_btn.Click += new System.EventHandler(this.TestaConexao_btn_Click);
-            // 
             // Label_UsuarioCadastrado
             // 
             this.Label_UsuarioCadastrado.AutoSize = true;
@@ -355,7 +318,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(443, 500);
             this.Controls.Add(this.Label_UsuarioCadastrado);
-            this.Controls.Add(this.TestaConexao_btn);
             this.Controls.Add(this.Label_Error);
             this.Controls.Add(this.Limpar_Btn);
             this.Controls.Add(this.Cadastrar_Btn);
@@ -389,7 +351,6 @@
         private Bunifu.Framework.UI.BunifuDragControl Register_Drag;
         private Bunifu.Framework.UI.BunifuElipse Form_Elipse;
         private Bunifu.Framework.UI.BunifuCustomLabel Label_Error;
-        private Bunifu.Framework.UI.BunifuFlatButton TestaConexao_btn;
         private Bunifu.Framework.UI.BunifuCustomLabel Label_UsuarioCadastrado;
     }
 }
